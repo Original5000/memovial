@@ -18,8 +18,8 @@ import src17 from './images/sub25/17.jpg';
 import src18 from './images/sub25/18.jpg';
 import src19 from './images/sub25/19.jpg';
 import src20 from './images/sub25/20.jpg';
-/*import src21 from './images/sub25/21.jpg';
-import src22 from './images/sub25/22.jpg';
+import src21 from './images/sub25/21.jpg';
+/*import src22 from './images/sub25/22.jpg';
 import src23 from './images/sub25/23.jpg';
 import src24 from './images/sub25/24.jpg';
 import src25 from './images/sub25/25.jpg';
@@ -203,16 +203,16 @@ const images = [
     src: src20,
     player: '20.jpg'
   },
-  /* {
+   {
     src: src21,
     player: '21.jpg'
   },
-  {
+   {
     src: src21,
     player: '21.jpg'
   },
 
-  {
+  /* {
     src: src22,
     player: '22.jpg'
   },

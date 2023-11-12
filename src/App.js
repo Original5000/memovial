@@ -3,7 +3,6 @@ import Card from './components/Card';
 import './App.css';
 import Button from 'react-bootstrap/Button';
 
-
 import { images } from './import';
 
 function App() {
@@ -74,9 +73,9 @@ function App() {
 
   return (
     <div className='app'>
-      <div className='cards-container' >
+      <div className='cards-container mb-4' >
         <div className='titulo'>
-          AQUI VA LA PRESENTACIÓN AQUI VA LA PRESENTACIÓN AQUI VA LA PRESENTACIÓN
+          MEMOVIAL SECRETARIA DE TRANSPORTE 
         </div>
         {
           cards.map((card, index) => (
