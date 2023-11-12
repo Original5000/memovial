@@ -12,7 +12,7 @@
 
 .card {
   display: inline-block;
-  margin: 2%;
+  margin: 1%;
   cursor: pointer;
 }
 
@@ -21,6 +21,6 @@
 }
 
 .card-image {
-  height: calc(80px - 10px);
-  width: calc(80px - 10px);
+  height: calc(90px - 10px);
+  width: calc(90px - 10px);
 }
