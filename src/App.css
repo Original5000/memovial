@@ -24,3 +24,9 @@
   height: calc(90px - 10px);
   width: calc(90px - 10px);
 }
+
+.btn {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}

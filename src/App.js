@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Card from './components/Card';
 import './App.css';
+import Button from 'react-bootstrap/Button';
+
 
 import { images } from './import';
 
@@ -20,6 +22,10 @@ function App() {
       array[i] = array[j];
       array[j] = temp;
     }
+  }
+  
+  const reset = () => {
+    window.location.reload();
   }
 
   useEffect(() => {
@@ -81,6 +87,11 @@ function App() {
             />
           ))
         }
+      </div>
+      <div className='btn'>
+         <Button onClick={reset}>
+           Nuevo Juego
+         </Button>
       </div>
     </div>
   );
