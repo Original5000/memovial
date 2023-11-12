@@ -10,7 +10,7 @@ import src9 from './images/sub25/9.jpg';
 import src10 from './images/sub25/10.jpg';
 import src11 from './images/sub25/11.jpg';
 import src12 from './images/sub25/12.jpg';
-import src13 from './images/sub25/12.jpg';
+import src13 from './images/sub25/13.jpg';
 import src14 from './images/sub25/14.jpg';
 import src15 from './images/sub25/15.jpg';
 import src16 from './images/sub25/16.jpg';
