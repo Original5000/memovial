@@ -4,6 +4,7 @@ import src3 from './images/sub25/christian-pulisic.jpg';
 import src4 from './images/sub25/erling-haaland.jpg';
 import src5 from './images/sub25/jordan-sancho.jpg';
 import src6 from './images/sub25/kylian-mbappe.jpg';
+import src7 from './images/sub25/34-alucinantes.jpg';
 
 
 const images = [
@@ -55,6 +56,14 @@ const images = [
     src: src6,
     player: 'Kylian Mbappe'
   },
+  {
+    src: src7,
+    player: '34-alucinantes.jpg'
+  },
+  {
+    src: src7,
+    player: '34-alucinantes.jpg'
+  }
 
 ];
 
