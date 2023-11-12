@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Card from './components/Card';
 import './App.css';
 import Button from 'react-bootstrap/Button';
+import imagen from './images/fondo.png'
 
 import { images } from './import';
 
@@ -73,10 +74,11 @@ function App() {
 
   return (
     <div className='app'>
-      <div className='cards-container mb-4' >
-        <div className='titulo'>
+      <div className='cards-container mb-4' style={{ backgroundImage: "url(./imagen.png)" }} >
+        <div className='titulo mb-5'>
           MEMOVIAL SECRETARIA DE TRANSPORTE 
-        </div>
+        </div>   
+        <img className='fondo' src={imagen}/>
         {
           cards.map((card, index) => (
             <Card
@@ -90,7 +92,7 @@ function App() {
           ))
         }
       </div>
-      <div className='btn'>
+      <div className='btn mt-5'>
          <Button onClick={reset}>
            Nuevo Juego
          </Button>
