@@ -21,12 +21,18 @@
 }
 
 .card-image {
-  height: calc(90px - 10px);
-  width: calc(90px - 10px);
+  height: calc(110px - 10px);
+  width: calc(110px - 10px);
 }
 
 .btn {
     display:flex;
     justify-content:center;
     align-items: center;
+}
+
+.titulo {
+  display:flex;
+  justify-content:center;
+  align-items: center;
 }

@@ -18,7 +18,7 @@ import src17 from './images/sub25/17.jpg';
 import src18 from './images/sub25/18.jpg';
 import src19 from './images/sub25/19.jpg';
 import src20 from './images/sub25/20.jpg';
-import src21 from './images/sub25/21.jpg';
+/*import src21 from './images/sub25/21.jpg';
 import src22 from './images/sub25/22.jpg';
 import src23 from './images/sub25/23.jpg';
 import src24 from './images/sub25/24.jpg';
@@ -37,7 +37,7 @@ import src36 from './images/sub25/36.jpg';
 import src37 from './images/sub25/37.jpg';
 import src38 from './images/sub25/38.jpg';
 import src39 from './images/sub25/39.jpg';
-import src40 from './images/sub25/40.jpg';
+import src40 from './images/sub25/40.jpg';*/
 
 
 const images = [
@@ -203,8 +203,7 @@ const images = [
     src: src20,
     player: '20.jpg'
   },
-
-  {
+  /* {
     src: src21,
     player: '21.jpg'
   },
@@ -377,7 +376,7 @@ const images = [
   {
     src: src40,
     player: '40.jpg'
-  }
+  } */
 
 ];
 
