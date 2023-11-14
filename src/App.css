@@ -1,12 +1,15 @@
 *{
-  justify-content: center;
-  align-items: center;
+  
+}
+
+.hidden {
+  margin: -2px; /* Ajusta el valor según sea necesario */
+  visibility: hidden;
 }
 .app {  
   background-color: white;
   display: block;
-  justify-content: center;
-  align-items: center;
+ 
 }
 
 .cards-container{
@@ -16,8 +19,9 @@
 
 .card {
   display: inline-block;
-  margin: 0.2%;
+  margin: 0;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .card:hover {
@@ -50,6 +54,3 @@
 
 }
 
-.hidden {
-  display: none;
-}

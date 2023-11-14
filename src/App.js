@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from './components/Card';
+import Cronometro from './components/Cronometro';
 import './App.css';
 import Button from 'react-bootstrap/Button';
 import imagen from './images/fondo.png'
@@ -58,7 +59,11 @@ function App() {
   }
 
   const disableCards = () => {
-    setDisabledCards([firstCard.number, secondCard.number]);
+    setDisabledCards((prevDisabledCards) => [
+      ...prevDisabledCards,
+      firstCard.number,
+      secondCard.number,
+    ]);
     resetCards();
   };
 
@@ -79,18 +84,28 @@ function App() {
           MEMOVIAL SECRETARIA DE TRANSPORTE 
         </div>   
         <img className='fondo' src={imagen}/>
-        {
-          cards.map((card, index) => (
-            <Card
-              name={card.player}
-              number={index}
-              frontFace={card.src}
-              flipCard={flipCard}
-              unflippedCards={unflippedCards}
-              disabledCards={disabledCards}
-            />
-          ))
-        }
+      
+         {
+  cards.map((card, index) => {
+    const isHidden = disabledCards.includes(index);
+    return (
+      <Card
+        key={index}
+        name={card.player}
+        number={index}
+        frontFace={card.src}
+        flipCard={flipCard}
+        unflippedCards={unflippedCards}
+        disabledCards={disabledCards}
+        isHidden={isHidden}
+      />
+    );
+  })
+}
+
+
+  <Cronometro/>
+  
       </div>
       <div className='btn mt-5'>
          <Button onClick={reset}>

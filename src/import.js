@@ -49,7 +49,7 @@ const images = [
     src: src1,
     player: '1.jpg'
   },
-  {
+ {
     src: src2,
     player: '2.jpg'
   },
