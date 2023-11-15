@@ -4,7 +4,7 @@
   visibility: hidden;
 }
 .app {  
-  background-color: rgb(81, 105, 42);
+  background-color: rgb(48, 150, 233);
   display: block;
   justify-content: center;
   align-items: center;
@@ -43,6 +43,8 @@
 .titulo {
   text-align: center;
   font-size: 300%;
+  background-color: rgb(85, 67, 67);
+  color: aqua;
   
 }
 
