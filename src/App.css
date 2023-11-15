@@ -1,14 +1,14 @@
-*{
-  
-}
 
 .hidden {
   margin: -2px; /* Ajusta el valor según sea necesario */
   visibility: hidden;
 }
 .app {  
-  background-color: white;
+  background-color: rgb(81, 105, 42);
   display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
  
 }
 
@@ -34,10 +34,10 @@
 }
 
 .btn {
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    margin-bottom: 5%;
+    margin-top: 0;
+    width: 35%;
+    height: 20%;
+    border-radius: 10px;
 }
 
 .titulo {
@@ -55,22 +55,17 @@
 }
 
 .reloj {
-  width: 300px;
-    height: 200px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 15%;
     border-radius: 10px;
 }
 
 .relojcentro {
-  display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 26px;
+    font-size: 25px;
     font-weight: bold;
-    background-color: rgb(29, 231, 46);
     border-radius: 10px;
 }
 

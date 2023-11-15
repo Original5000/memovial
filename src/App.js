@@ -17,14 +17,6 @@ function App() {
   const [segundos, setSegundos] = useState(0);
   const [corriendo, setCorriendo] = useState(false);
 
-  useEffect(() => {
-    if (firstCard.name && Object.keys(secondCard).length === 0) {
-      iniciarDetenerCronometro();
-    }
-  }, [firstCard, secondCard]);
-
-  
-
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -37,6 +29,19 @@ function App() {
   const reset = () => {
     window.location.reload();
   }
+   
+  useEffect(() => {
+    if (firstCard.name && Object.keys(secondCard).length === 0) {
+      iniciarCronometro(); // Inicia el cronómetro cuando se destapa la primera carta
+    }
+  }, [firstCard, secondCard]);
+
+  useEffect(() => {
+    if (disabledCards.length === cards.length){
+      detenerCronometro(); // Detener conometro despues que se destapen todas las cartas
+    }
+  });
+  
 
   useEffect(() => {
     shuffleArray(images);
@@ -81,8 +86,12 @@ function App() {
     };
   }, [corriendo]);
 
-  const iniciarDetenerCronometro = () => {
-    setCorriendo(!corriendo);
+  const iniciarCronometro = () => {
+    setCorriendo(true);
+  };
+
+  const detenerCronometro = () => {
+    setCorriendo(false);
   };
 
   const disableCards = () => {
@@ -131,14 +140,14 @@ function App() {
         }
 
       </div>
-      <div className='reloj'>
+
       <div className='relojcentro'>{`${Math.floor(segundos / 3600)
       .toString()
       .padStart(2, '0')}:${Math.floor((segundos % 3600) / 60)
       .toString()
       .padStart(2, '0')}:${(segundos % 60).toString().padStart(2, '0')}`}</div>
-    </div>
-      <div className='btn mt-5'>
+
+      <div className='btn mb-5'>
          <Button onClick={reset}>
            Nuevo Juego
          </Button>
