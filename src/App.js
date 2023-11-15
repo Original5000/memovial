@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Card from './components/Card';
-import Cronometro from './components/Cronometro';
 import './App.css';
 import Button from 'react-bootstrap/Button';
 import imagen from './images/fondo.png'
@@ -15,6 +14,16 @@ function App() {
 
   const [unflippedCards, setUnflippedCards] = useState([]);
   const [disabledCards, setDisabledCards] = useState([]);
+  const [segundos, setSegundos] = useState(0);
+  const [corriendo, setCorriendo] = useState(false);
+
+  useEffect(() => {
+    if (firstCard.name && Object.keys(secondCard).length === 0) {
+      iniciarDetenerCronometro();
+    }
+  }, [firstCard, secondCard]);
+
+  
 
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -58,6 +67,24 @@ function App() {
     }
   }
 
+  useEffect(() => {
+    let intervalID;
+
+    if (corriendo) {
+      intervalID = setInterval(() => {
+        setSegundos((prevSegundos) => prevSegundos + 1);
+      }, 1000);
+    }
+
+    return () => {
+      clearInterval(intervalID);
+    };
+  }, [corriendo]);
+
+  const iniciarDetenerCronometro = () => {
+    setCorriendo(!corriendo);
+  };
+
   const disableCards = () => {
     setDisabledCards((prevDisabledCards) => [
       ...prevDisabledCards,
@@ -86,27 +113,31 @@ function App() {
         <img className='fondo' src={imagen}/>
       
          {
-  cards.map((card, index) => {
-    const isHidden = disabledCards.includes(index);
-    return (
-      <Card
-        key={index}
-        name={card.player}
-        number={index}
-        frontFace={card.src}
-        flipCard={flipCard}
-        unflippedCards={unflippedCards}
-        disabledCards={disabledCards}
-        isHidden={isHidden}
-      />
-    );
-  })
-}
+          cards.map((card, index) => {
+            const isHidden = disabledCards.includes(index);
+            return (
+              <Card
+                key={index}
+                name={card.player}
+                number={index}
+                frontFace={card.src}
+                flipCard={flipCard}
+                unflippedCards={unflippedCards}
+                disabledCards={disabledCards}
+                isHidden={isHidden}
+              />
+            );
+          })
+        }
 
-
-  <Cronometro/>
-  
       </div>
+      <div className='reloj'>
+      <div className='relojcentro'>{`${Math.floor(segundos / 3600)
+      .toString()
+      .padStart(2, '0')}:${Math.floor((segundos % 3600) / 60)
+      .toString()
+      .padStart(2, '0')}:${(segundos % 60).toString().padStart(2, '0')}`}</div>
+    </div>
       <div className='btn mt-5'>
          <Button onClick={reset}>
            Nuevo Juego

@@ -54,3 +54,25 @@
 
 }
 
+.reloj {
+  width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.relojcentro {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: rgb(29, 231, 46);
+    border-radius: 10px;
+}
+
+
+
