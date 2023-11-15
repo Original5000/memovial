@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactCardFlip from 'react-card-flip';
-import backFace from '../images/question-mark-card.png'
+import backFace from '../images/semaforo.jpg'
 
 const Card = ({ name, number, frontFace, flipCard, unflippedCards, disabledCards, isHidden }) => {
   const [isFlipped, setIsFlipped] = useState(false);
