@@ -3,6 +3,7 @@ import Card from './components/Card';
 import './App.css';
 import Button from 'react-bootstrap/Button';
 import imagen from './images/fondo.png'
+import ConfettiComponent from './components/Confetti'
 
 import { images } from './import';
 
@@ -115,10 +116,12 @@ function App() {
 
   return (
     <div className='app'>
-      <div className='cards-container mb-4' style={{ backgroundImage: "url(./imagen.png)" }} >
+      <div className='cards-container mb-4' >
         <div className='titulo mb-5'>
           MEMOVIAL SECRETARIA DE TRANSPORTE 
-        </div>   
+        </div>
+        <div>
+        {disabledCards.length === cards.length && <ConfettiComponent/>}
         <img className='fondo' src={imagen}/>
       
          {
@@ -138,9 +141,10 @@ function App() {
             );
           })
         }
+        </div>
 
       </div>
-
+      <div className='reloj-reset'>
       <div className='relojcentro'>{`${Math.floor(segundos / 3600)
       .toString()
       .padStart(2, '0')}:${Math.floor((segundos % 3600) / 60)
@@ -151,6 +155,7 @@ function App() {
          <Button onClick={reset}>
            Nuevo Juego
          </Button>
+      </div>
       </div>
     </div>
   );
