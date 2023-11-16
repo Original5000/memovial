@@ -116,14 +116,13 @@ function App() {
 
   return (
     <div className='app'>
-      <div className='cards-container mb-4' >
+      <div className={'cards-container'}>
         <div className='titulo mb-5'>
           MEMOVIAL SECRETARIA DE TRANSPORTE 
         </div>
         <div>
         {disabledCards.length === cards.length && <ConfettiComponent/>}
         <img className='fondo' src={imagen}/>
-      
          {
           cards.map((card, index) => {
             const isHidden = disabledCards.includes(index);
@@ -142,7 +141,6 @@ function App() {
           })
         }
         </div>
-
       </div>
       <div className='reloj-reset'>
       <div className='relojcentro'>{`${Math.floor(segundos / 3600)

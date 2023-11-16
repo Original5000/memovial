@@ -36,7 +36,7 @@ const Card = ({ name, number, frontFace, flipCard, unflippedCards, disabledCards
     opacity: shouldHide ? 0 : 1,
     width: shouldHide ? '90px' : '90px', // Establece un ancho mínimo para la carta oculta
     height: shouldHide ? '90px' : '90px', // Establece un alto mínimo para la carta oculta
-    transition: 'opacity 2s', // Cambio suave de opacidad
+    transition: 'opacity 2s', // Cambio suave de opacidad 
   };
 
   return (
