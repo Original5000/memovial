@@ -3,6 +3,7 @@ import Card from './components/Card';
 import './App.css';
 import Button from 'react-bootstrap/Button';
 import imagen from './images/fondo.png'
+import josevasquez from './images/Jose Vasquez Gorbernador.jpg'
 import ConfettiComponent from './components/Confetti'
 
 import { images } from './import';
@@ -117,11 +118,12 @@ function App() {
   return (
     <div className='app'>
       <div className={'cards-container'}>
-        <div className='titulo mb-5'>
-          MEMOVIAL SECRETARIA DE TRANSPORTE 
+        <div className='titulo'>
+          MEMOVIAL SECRETARIA DE TRANSPORTE DE GUÁRICO
         </div>
+        <div><img className='fondocabecera' src={josevasquez}/> </div>
         <div>
-        {disabledCards.length === cards.length && <ConfettiComponent/>}
+        {disabledCards.length === cards.length && <ConfettiComponent/> }
         <img className='fondo' src={imagen}/>
          {
           cards.map((card, index) => {
@@ -140,6 +142,7 @@ function App() {
             );
           })
         }
+      
         </div>
       </div>
       <div className='reloj-reset'>
@@ -149,7 +152,7 @@ function App() {
       .toString()
       .padStart(2, '0')}:${(segundos % 60).toString().padStart(2, '0')}`}</div>
 
-      <div className='btn mb-5'>
+      <div className='btn'>
          <Button onClick={reset}>
            Nuevo Juego
          </Button>
