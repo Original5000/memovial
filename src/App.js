@@ -19,6 +19,18 @@ function App() {
   const [segundos, setSegundos] = useState(0);
   const [corriendo, setCorriendo] = useState(false);
 
+  const [paginaCargada, setPaginaCargada] = useState(false);
+
+  useEffect(() => {
+    // Simula el tiempo de carga, por ejemplo, 2 segundos
+    const tiempoDeCargaSimulado = 1000;
+    
+    // Cuando el componente se monta, inicia la carga
+    setTimeout(() => {
+      setPaginaCargada(true);
+    }, tiempoDeCargaSimulado);
+  }, []);
+
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -117,13 +129,18 @@ function App() {
 
   return (
     <div className='app'>
+      {paginaCargada ? (
+      <div>
       <div className={'cards-container'}>
         <div className='titulo'>
           MEMOVIAL SECRETARIA DE TRANSPORTE DE GUÁRICO
         </div>
-        <div><img className='fondocabecera' src={josevasquez}/> </div>
         <div>
-        {disabledCards.length === cards.length && <ConfettiComponent/> }
+          <img className='fondocabecera' src={josevasquez}/> 
+        </div>
+        <div >
+        {disabledCards.length === cards.length && <ConfettiComponent/> }     
+                         
         <img className='fondo' src={imagen}/>
          {
           cards.map((card, index) => {
@@ -158,8 +175,15 @@ function App() {
          </Button>
       </div>
       </div>
+      </div>
+      ) : (
+        // Mostrar un mensaje de carga mientras la página se está cargando
+          <p>Cargando...</p>
+      )}
     </div>
   );
 }
 
 export default App;
+
+

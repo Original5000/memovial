@@ -1,14 +1,11 @@
 
-*{
-  background-color: rgb(48, 150, 233);
-}
 
 .app {  
   display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
- 
+  background-color: rgb(48, 150, 233);
 }
 
 .cards-container{
@@ -46,7 +43,6 @@
   font-weight: 800;
   color: rgb(2, 5, 7);
   background-color: transparent;
-  
 }
 
 .fondo {
@@ -76,6 +72,20 @@
     font-size: 25px;
     font-weight: bold;
     border-radius: 10px;
+}
+
+.relojcentr {
+  font-weight: bold;
+  font-size: 2000%;
+  font-weight: 800;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  margin-left: 1.5%;
+}
+
+p{
+  background-color: white;
 }
 
 

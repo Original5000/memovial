@@ -26,7 +26,7 @@ import src25 from './images/sub25/25.jpg';
 import src26 from './images/sub25/26.jpg';
 import src27 from './images/sub25/27.jpg';
 import src28 from './images/sub25/28.jpg';
-/* import src29 from './images/sub25/29.jpg';
+/*import src29 from './images/sub25/29.jpg';
 import src30 from './images/sub25/30.jpg';
 import src31 from './images/sub25/31.jpg';
 import src32 from './images/sub25/32.jpg';
