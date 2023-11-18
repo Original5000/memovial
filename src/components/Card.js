@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import backFace from '../images/semaforo.jpg'
+import useSound from 'use-sound';
+import sound from '../sonidos/campana.mp3'
 
 const Card = ({ name, number, frontFace, flipCard, unflippedCards, disabledCards, isHidden }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [hasEvent, setHasEvent] = useState(true);
   const [shouldHide, setShouldHide] = useState(false);
+  const [playSound] = useSound(sound)
 
   useEffect(() => {
     if (unflippedCards.includes(number)) {
@@ -16,6 +19,7 @@ const Card = ({ name, number, frontFace, flipCard, unflippedCards, disabledCards
   useEffect(() => {
     if (disabledCards.includes(number)) {
       setHasEvent(false);
+      playSound();
     }
   }, [disabledCards])
 

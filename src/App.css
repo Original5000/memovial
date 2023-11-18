@@ -41,9 +41,11 @@
 
 .titulo {
   position: absolute;
-  text-align: center;
-  font-size: 100%;
-  color: rgb(6, 7, 7);
+  margin-left: 3%;
+  font-size: 200%;
+  font-weight: 800;
+  color: rgb(2, 5, 7);
+  background-color: transparent;
   
 }
 
