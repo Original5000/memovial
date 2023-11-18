@@ -43,339 +43,341 @@ import src40 from './images/sub25/40.jpg';*/
 const images = [
   {
     src: src1,
-    player: '1.jpg'
+    name: '1.jpg',
+    sound: '1'
   },
   {
     src: src1,
-    player: '1.jpg'
+    name: '1.jpg',
+    sound: '1'
   },
  {
     src: src2,
-    player: '2.jpg'
+    name: '2.jpg'
   },
   {
     src: src2,
-    player: '2.jpg'
+    name: '2.jpg'
   },
   {
     src: src3,
-    player: '3.jpg'
+    name: '3.jpg'
   },
   {
     src: src3,
-    player: '3.jpg'
+    name: '3.jpg'
   },
   {
     src: src4,
-    player: '4.jpg'
+    name: '4.jpg'
   },
   {
     src: src4,
-    player: '4.jpg'
+    name: '4.jpg'
   },
   {
     src: src5,
-    player: '5.jpg'
+    name: '5.jpg'
   },
   {
     src: src5,
-    player: '5.jpg'
+    name: '5.jpg'
   },
   {
     src: src6,
-    player: '6.jpg'
+    name: '6.jpg'
   },
   {
     src: src6,
-    player: '6.jpg'
+    name: '6.jpg'
   },
   {
     src: src7,
-    player: '7.jpg'
+    name: '7.jpg'
   },
   {
     src: src7,
-    player: '7.jpg'
+    name: '7.jpg'
   },
   {
     src: src8,
-    player: '8.jpg'
+    name: '8.jpg'
   },
   {
     src: src8,
-    player: '8.jpg'
+    name: '8.jpg'
   },
   {
     src: src9,
-    player: '9.jpg'
+    name: '9.jpg'
   },
   {
     src: src9,
-    player: '9.jpg'
+    name: '9.jpg'
   },
   {
     src: src10,
-    player: '10.jpg'
+    name: '10.jpg'
   },
   {
     src: src10,
-    player: '10.jpg'
+    name: '10.jpg'
   },{
     src: src11,
-    player: '11.jpg'
+    name: '11.jpg'
   },
   {
     src: src11,
-    player: '11.jpg'
+    name: '11.jpg'
   },
 
   {
     src: src12,
-    player: '12.jpg'
+    name: '12.jpg'
   },
   {
     src: src12,
-    player: '12.jpg'
+    name: '12.jpg'
   },
   {
     src: src13,
-    player: '13.jpg'
+    name: '13.jpg'
   },
   {
     src: src13,
-    player: '13.jpg'
+    name: '13.jpg'
   },
   {
     src: src14,
-    player: '14.jpg'
+    name: '14.jpg'
   },
   {
     src: src14,
-    player: '14.jpg'
+    name: '14.jpg'
   },
   {
     src: src15,
-    player: '15.jpg'
+    name: '15.jpg'
   },
   {
     src: src15,
-    player: '15.jpg'
+    name: '15.jpg'
   },
   {
     src: src16,
-    player: '16.jpg'
+    name: '16.jpg'
   },
   {
     src: src16,
-    player: '16.jpg'
+    name: '16.jpg'
   },
   {
     src: src17,
-    player: '17.jpg'
+    name: '17.jpg'
   },
   {
     src: src17,
-    player: '17.jpg'
+    name: '17.jpg'
   },
   {
     src: src18,
-    player: '18.jpg'
+    name: '18.jpg'
   },
   {
     src: src18,
-    player: '18.jpg'
+    name: '18.jpg'
   },
 
   {
     src: src19,
-    player: '19.jpg'
+    name: '19.jpg'
   },
   {
     src: src19,
-    player: '19.jpg'
+    name: '19.jpg'
   },
 
   {
     src: src20,
-    player: '20.jpg'
+    name: '20.jpg'
   },
   {
     src: src20,
-    player: '20.jpg'
+    name: '20.jpg'
   },
    {
     src: src21,
-    player: '21.jpg'
+    name: '21.jpg'
   },
    {
     src: src21,
-    player: '21.jpg'
+    name: '21.jpg'
   },
 
    {
     src: src22,
-    player: '22.jpg'
+    name: '22.jpg'
   },
   {
     src: src22,
-    player: '22.jpg'
+    name: '22.jpg'
   },
 
   {
     src: src23,
-    player: '23.jpg'
+    name: '23.jpg'
   },
   {
     src: src23,
-    player: '23.jpg'
+    name: '23.jpg'
   },
 
   {
     src: src24,
-    player: '24.jpg'
+    name: '24.jpg'
   },
   {
     src: src24,
-    player: '24.jpg'
+    name: '24.jpg'
   },
 
   {
     src: src25,
-    player: '25.jpg'
+    name: '25.jpg'
   },
   {
     src: src25,
-    player: '25.jpg'
+    name: '25.jpg'
   },
 
   {
     src: src26,
-    player: '26.jpg'
+    name: '26.jpg'
   },
   {
     src: src26,
-    player: '26.jpg'
+    name: '26.jpg'
   },
 
   {
     src: src27,
-    player: '27.jpg'
+    name: '27.jpg'
   },
   {
     src: src27,
-    player: '27.jpg'
+    name: '27.jpg'
   },
 
   {
     src: src28,
-    player: '28.jpg'
+    name: '28.jpg'
   },
   {
     src: src28,
-    player: '28.jpg'
+    name: '28.jpg'
   },
 
   /* {
     src: src29,
-    player: '29.jpg'
+    name: '29.jpg'
   },
   {
     src: src29,
-    player: '29.jpg'
+    name: '29.jpg'
   },
   {
     src: src30,
-    player: '30.jpg'
+    name: '30.jpg'
   },
   {
     src: src30,
-    player: '30.jpg'
+    name: '30.jpg'
   },
 
   {
     src: src31,
-    player: '31.jpg'
+    name: '31.jpg'
   },
   {
     src: src31,
-    player: '31.jpg'
+    name: '31.jpg'
   },
 
   {
     src: src32,
-    player: '32.jpg'
+    name: '32.jpg'
   },
   {
     src: src32,
-    player: '32.jpg'
+    name: '32.jpg'
   },
 
   {
     src: src33,
-    player: '33.jpg'
+    name: '33.jpg'
   },
   {
     src: src33,
-    player: '33.jpg'
+    name: '33.jpg'
   },
 
   {
     src: src34,
-    player: '34.jpg'
+    name: '34.jpg'
   },
   {
     src: src34,
-    player: '34.jpg'
+    name: '34.jpg'
   },
 
   {
     src: src35,
-    player: '35.jpg'
+    name: '35.jpg'
   },
   {
     src: src35,
-    player: '35.jpg'
+    name: '35.jpg'
   },
   {
     src: src36,
-    player: '36.jpg'
+    name: '36.jpg'
   },
   {
     src: src36,
-    player: '36.jpg'
+    name: '36.jpg'
   },
 
   {
     src: src37,
-    player: '37.jpg'
+    name: '37.jpg'
   },
   {
     src: src37,
-    player: '37.jpg'
+    name: '37.jpg'
   },
   {
     src: src38,
-    player: '38.jpg'
+    name: '38.jpg'
   },
   {
     src: src38,
-    player: '38.jpg'
+    name: '38.jpg'
   },
   {
     src: src39,
-    player: '39.jpg'
+    name: '39.jpg'
   },
   {
     src: src39,
-    player: '39.jpg'
+    name: '39.jpg'
   },
   {
     src: src40,
-    player: '40.jpg'
+    name: '40.jpg'
   },
   {
     src: src40,
-    player: '40.jpg'
+    name: '40.jpg'
   } */
 
 ];

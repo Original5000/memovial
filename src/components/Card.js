@@ -8,7 +8,7 @@ const Card = ({ name, number, frontFace, flipCard, unflippedCards, disabledCards
   const [isFlipped, setIsFlipped] = useState(false);
   const [hasEvent, setHasEvent] = useState(true);
   const [shouldHide, setShouldHide] = useState(false);
-  const [playSound] = useSound(sound)
+  const [playSound] = useSound(sound);
 
   useEffect(() => {
     if (unflippedCards.includes(number)) {
@@ -19,10 +19,8 @@ const Card = ({ name, number, frontFace, flipCard, unflippedCards, disabledCards
   useEffect(() => {
     if (disabledCards.includes(number)) {
       setHasEvent(false);
-      playSound();
     }
   }, [disabledCards])
-
   
   const handleClick = e => {
     const value = flipCard(name, number);
