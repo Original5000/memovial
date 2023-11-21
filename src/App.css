@@ -42,8 +42,10 @@
   position: absolute;
   font-size: 200%;
   font-weight: 800;
-  color: rgb(2, 5, 7);
-  background-color: rgb(48, 150, 233);
+  color: rgb(252, 6, 6);
+  border-color: black;
+  background-color: transparent;
+  margin-left: 15%;
 }
 
 .fondo {
