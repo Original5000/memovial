@@ -125,17 +125,25 @@ function App() {
   }, [secondCard]);
 
   const flipCard = (name, number) => {
+    // Verifica si la carta ya está deshabilitada
+    if (disabledCards.includes(number)) {
+      return 0; // No hagas nada si la carta ya está deshabilitada
+    }
+  
     if (firstCard.name === name && firstCard.number === number) {
       return 0;
     }
     if (!firstCard.name) {
       setFirstCard({ name, number });
-    }
-    else if (!secondCard.name) {
+    } else if (!secondCard.name) {
       setSecondCard({ name, number });
     }
     return 1;
-  }
+  };
+
+
+
+
 
   const checkForMatch = () => {
     if (firstCard.name && secondCard.name) {
