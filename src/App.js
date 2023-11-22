@@ -285,10 +285,10 @@ function App() {
         <div>
           <img className='fondocabecera' src={josevasquez}/> 
         </div>
-        <div >
-        {disabledCards.length === cards.length && <ConfettiComponent/> }     
-                         
         <img className='fondo' src={imagen}/>
+        {disabledCards.length === cards.length && <ConfettiComponent/> }
+
+        <div className='baulcard'>
          {
           cards.map((card, index) => {
             const isHidden = disabledCards.includes(index);

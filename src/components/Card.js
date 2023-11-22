@@ -3,7 +3,7 @@ import ReactCardFlip from 'react-card-flip';
 import backFace from '../images/semaforo.jpg'
 
 const Card = ({ name, number, frontFace, flipCard, unflippedCards, disabledCards, isHidden }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(true);
   const [hasEvent, setHasEvent] = useState(true);
   const [shouldHide, setShouldHide] = useState(false);
 
