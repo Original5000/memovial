@@ -3,7 +3,7 @@ import ReactCardFlip from 'react-card-flip';
 import backFace from '../images/semaforo.jpg'
 
 const Card = ({ name, number, frontFace, flipCard, unflippedCards, disabledCards, isHidden }) => {
-  const [isFlipped, setIsFlipped] = useState(true);
+  const [isFlipped, setIsFlipped] = useState(false);
   const [hasEvent, setHasEvent] = useState(true);
   const [shouldHide, setShouldHide] = useState(false);
 
@@ -35,15 +35,14 @@ const Card = ({ name, number, frontFace, flipCard, unflippedCards, disabledCards
     opacity: shouldHide ? 0 : 1,
     width: shouldHide ? '90px' : '90px', // Establece un ancho mínimo para la carta oculta
     height: shouldHide ? '90px' : '90px', // Establece un alto mínimo para la carta oculta
-    transition: 'opacity 2s', // Cambio suave de opacidad
-    backgroundColor: 'transparent'
+    transition: 'opacity 2s', // Cambio suave de opacidad  
   };
 
   return (
     <div className="card" onClick={handleClick} >
       <ReactCardFlip isFlipped={isFlipped} >
-      {isHidden ? <img className='card-image' src={backFace}  alt='back-face' style={{ ...cardStyles }} onClick={hasEvent ? handleClick : null} /> : <img className='card-image' src={backFace}  alt='back-face' onClick={hasEvent ? handleClick : null} />}
-      {isHidden ? <img className='card-image' src={frontFace} alt='front-face' style={{ ...cardStyles }} onClick={hasEvent ? handleClick : null} /> : <img className='card-image' src={frontFace} alt='front-face' onClick={hasEvent ? handleClick : null} />}
+      {isHidden ? "" : <img className='card-image' src={backFace}  alt='back-face' onClick={hasEvent ? handleClick : null} />}
+      {isHidden ? "" : <img className='card-image' src={frontFace} alt='front-face' onClick={hasEvent ? handleClick : null} />}
       </ReactCardFlip>
     </div>
   )
