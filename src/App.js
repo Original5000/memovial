@@ -292,8 +292,9 @@ function App() {
         <div>
           <img className='fondocabecera' src={josevasquez}/> 
         </div>
+        <div>
+        { disabledCards.length === cards.length && <ConfettiComponent/> }
         <img className='fondo' src={imagen}/>
-        {disabledCards.length === cards.length && <ConfettiComponent/> }
         <div className='baulcard'>
          {
           cards.map((card, index) => {
@@ -313,6 +314,7 @@ function App() {
           })
         }
 
+        </div>
         </div>
         <div className='reloj-reset'>
       <div className='relojcentro'>{`${Math.floor(segundos / 3600)

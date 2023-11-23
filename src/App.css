@@ -1,7 +1,8 @@
 *{
-  background-color: rgb(48, 150, 233);
+  
 }
 .app {  
+  background-color: rgb(107, 157, 199);
   display: block;
 }
 
@@ -33,8 +34,19 @@
   font-weight: 800;
   font-style: italic;
   color: red;
-  background-color: transparent;
+  background-color: rgb(107, 157, 199);
+  border-radius: 80%;
   margin-left: 15%;
+}
+
+@media only screen and (max-width: 480px) {
+  .titulo{
+    background-color: transparent;
+  }
+  .card-image{
+    height: calc(60px - 6px);
+    width: calc(60px - 6px);
+  }
 }
 
 .fondo {
@@ -85,7 +97,7 @@
 }
 
 p{
-  background-color: rgb(48, 150, 233);
+  background-color: white;
   text-align: center;
 }
 
