@@ -285,8 +285,7 @@ function App() {
   return (
     <div className='app'>
        {paginaCargada ? ( 
-      <div>
-      <div className={'cards-container'}>
+      <div className={''}>
         <div className='titulo'>
           MEMOVIAL SECRETARIA DE TRANSPORTE DE GUÁRICO
         </div>
@@ -316,8 +315,7 @@ function App() {
         }
 
         </div>
-      </div>
-      <div className='reloj-reset'>
+        <div className='reloj-reset'>
       <div className='relojcentro'>{`${Math.floor(segundos / 3600)
       .toString()
       .padStart(2, '0')}:${Math.floor((segundos % 3600) / 60)
@@ -325,7 +323,7 @@ function App() {
       .padStart(2, '0')}:${(segundos % 60).toString().padStart(2, '0')}`}</div>
 
       <div className='btn'>
-         <Button onClick={reset}>
+         <Button className='btn btn-primary' onClick={reset}>
            Nuevo Juego
          </Button>
       </div>
