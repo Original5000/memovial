@@ -40,12 +40,18 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .titulo{
-    background-color: transparent;
-  }
+  
   .card-image{
-    height: calc(60px - 6px);
-    width: calc(60px - 6px);
+    height: calc(55x - 6px);
+    width: calc(55px - 6px);
+  }
+  .titulo {
+    position: absolute;
+    font-size: 20px;
+    font-style: italic;
+    color: red;
+    background-color: rgb(107, 157, 199);
+    border-radius: 80%;
   }
 }
 
