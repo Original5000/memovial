@@ -14,6 +14,7 @@
 
 .baulcard {
   text-align: center;
+  min-height: 368px;
   
 }
 
@@ -31,7 +32,7 @@
   font-size: 200%;
   font-weight: 800;
   font-style: italic;
-  border-color: black;
+  color: red;
   background-color: transparent;
   margin-left: 15%;
 }
