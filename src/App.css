@@ -42,8 +42,8 @@
 @media only screen and (max-width: 480px) {
   
   .card-image{
-    height: calc(55x - 6px);
-    width: calc(55px - 6px);
+    height: calc(50x - 5px);
+    width: calc(50px - 5px);
   }
   .titulo {
     position: absolute;
