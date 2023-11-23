@@ -53,16 +53,19 @@
     background-color: rgb(107, 157, 199);
     border-radius: 80%;
   }
+  
 }
 
 .fondo {
-  width: 90%;
-  margin-left: 5%;
+  /* width: 90%;
+  margin-left: 5%; */
+  width: 100%;
   height: 368px;
   background-position: center;
   justify-content: center;
   align-items: center;
   position: absolute;
+  z-index: 1;
 }
 
 .fondocabecera {

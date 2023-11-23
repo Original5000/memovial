@@ -6,7 +6,7 @@ const ConfettiComponent = () => {
     <Confetti
       width={window.innerWidth}
       height={window.innerHeight}
-      numberOfPieces={1000} // Ajusta la cantidad de confetti
+      numberOfPieces={1200} // Ajusta la cantidad de confetti
       recycle={true} // Establece en true si deseas que el confetti vuelva a aparecer después de caer
       gravity={0.2} // Ajusta la gravedad del confetti
     />

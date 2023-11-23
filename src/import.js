@@ -1,6 +1,6 @@
 import src1 from './images/sub25/1.jpg';
 import src2 from './images/sub25/2.jpg';
-import src3 from './images/sub25/3.jpg';
+/*import src3 from './images/sub25/3.jpg';
 import src4 from './images/sub25/4.jpg';
 import src5 from './images/sub25/5.jpg';
 import src6 from './images/sub25/6.jpg';
@@ -59,7 +59,7 @@ const images = [
     src: src2,
     name: '2.jpg'
   },
-  {
+  /*{
     src: src3,
     name: '3.jpg'
   },
