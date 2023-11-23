@@ -43,8 +43,8 @@ const Card = ({ name, number, frontFace, flipCard, unflippedCards, disabledCards
   return (
     <div className="card" onClick={handleClick} >
       <ReactCardFlip isFlipped={isFlipped} >
-      {isHidden ? <img className='card-image' src={backFace}  alt='back-face' style={{ ...cardStyles }} onClick={hasEvent ? handleClick : null} /> : <img className='card-image' src={backFace}  alt='back-face' onClick={hasEvent ? handleClick : null} />}
-      {isHidden ? <img className='card-image' src={frontFace} alt='front-face' style={{ ...cardStyles }} onClick={hasEvent ? handleClick : null} /> : <img className='card-image' src={frontFace} alt='front-face' onClick={hasEvent ? handleClick : null} />}
+      {isHidden ? "" : <img className='card-image' src={backFace}  alt='back-face' onClick={hasEvent ? handleClick : null} />}
+      {isHidden ? "" : <img className='card-image' src={frontFace} alt='front-face' onClick={hasEvent ? handleClick : null} />}
       </ReactCardFlip>
     </div>
   )

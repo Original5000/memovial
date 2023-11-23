@@ -294,7 +294,6 @@ function App() {
         </div>
         <img className='fondo' src={imagen}/>
         {disabledCards.length === cards.length && <ConfettiComponent/> }
-
         <div className='baulcard'>
          {
           cards.map((card, index) => {
