@@ -50,7 +50,7 @@ function App() {
   const [corriendo, setCorriendo] = useState(false);
 
   const [paginaCargada, setPaginaCargada] = useState(false);
-  const [playSound] = useSound(sound);
+  const [playSound] = useSound(sound, {volume: 4});
   const [playSound1] = useSound(sound1, {volume: 3});
   const [playSound2] = useSound(sound2, {volume: 3});
   const [playSound3] = useSound(sound3, {volume: 3});
@@ -157,89 +157,265 @@ function App() {
   }
 
   useEffect(() => {
-    if (firstCard.name === '1.jpg' && secondCard.name === '1.jpg') {
+    if (firstCard.name === '1.jpg') {
         playSound1();
       }
-      if (firstCard.name === '2.jpg' && secondCard.name === '2.jpg') {
+      if (firstCard.name === '2.jpg') {
         playSound2();
       }
-      if (firstCard.name === '3.jpg' && secondCard.name === '3.jpg') {
+      if (firstCard.name === '3.jpg') {
         playSound3();
       }
-      if (firstCard.name === '4.jpg' && secondCard.name === '4.jpg') {
+      if (firstCard.name === '4.jpg') {
         playSound4();
       }
-      if (firstCard.name === '5.jpg' && secondCard.name === '5.jpg') {
+      if (firstCard.name === '5.jpg') {
         playSound5();
       }
-      if (firstCard.name === '6.jpg' && secondCard.name === '6.jpg') {
+      if (firstCard.name === '6.jpg') {
         playSound6();
       }
-      if (firstCard.name === '7.jpg' && secondCard.name === '7.jpg') {
+      if (firstCard.name === '7.jpg') {
         playSound7();
       }
-      if (firstCard.name === '8.jpg' && secondCard.name === '8.jpg') {
+      if (firstCard.name === '8.jpg') {
         playSound8();
       }
-      if (firstCard.name === '9.jpg' && secondCard.name === '9.jpg') {
+      if (firstCard.name === '9.jpg') {
         playSound9();
       }
-      if (firstCard.name === '10.jpg' && secondCard.name === '10.jpg') {
+      if (firstCard.name === '10.jpg') {
         playSound10();
       }
-      if (firstCard.name === '11.jpg' && secondCard.name === '11.jpg') {
+      if (firstCard.name === '11.jpg') {
         playSound11();
       }
-      if (firstCard.name === '12.jpg' && secondCard.name === '12.jpg') {
+      if (firstCard.name === '12.jpg') {
         playSound12();
       }
-      if (firstCard.name === '13.jpg' && secondCard.name === '13.jpg') {
+      if (firstCard.name === '13.jpg') {
         playSound13();
       }
-      if (firstCard.name === '14.jpg' && secondCard.name === '14.jpg') {
+      if (firstCard.name === '14.jpg') {
         playSound14();
       }
-      if (firstCard.name === '15.jpg' && secondCard.name === '15.jpg') {
+      if (firstCard.name === '15.jpg') {
         playSound15();
       }
-      if (firstCard.name === '16.jpg' && secondCard.name === '16.jpg') {
+      if (firstCard.name === '16.jpg') {
         playSound16();
       }
-      if (firstCard.name === '17.jpg' && secondCard.name === '17.jpg') {
+      if (firstCard.name === '17.jpg') {
         playSound17();
       }
-      if (firstCard.name === '18.jpg' && secondCard.name === '18.jpg') {
+      if (firstCard.name === '18.jpg') {
         playSound18();
       }
-      if (firstCard.name === '19.jpg' && secondCard.name === '19.jpg') {
+      if (firstCard.name === '19.jpg') {
         playSound19();
       }
-      if (firstCard.name === '20.jpg' && secondCard.name === '20.jpg') {
+      if (firstCard.name === '20.jpg') {
         playSound20();
       }
-      if (firstCard.name === '21.jpg' && secondCard.name === '21.jpg') {
+      if (firstCard.name === '21.jpg') {
         playSound21();
       }
-      if (firstCard.name === '22.jpg' && secondCard.name === '22.jpg') {
+      if (firstCard.name === '22.jpg') {
         playSound22();
       }
-      if (firstCard.name === '23.jpg' && secondCard.name === '23.jpg') {
+      if (firstCard.name === '23.jpg') {
         playSound23();
       }
-      if (firstCard.name === '24.jpg' && secondCard.name === '24.jpg') {
+      if (firstCard.name === '24.jpg') {
         playSound24();
       }
-      if (firstCard.name === '25.jpg' && secondCard.name === '25.jpg') {
+      if (firstCard.name === '25.jpg') {
         playSound25();
       }
-      if (firstCard.name === '26.jpg' && secondCard.name === '26.jpg') {
+      if (firstCard.name === '26.jpg') {
         playSound26();
       }
-      if (firstCard.name === '27.jpg' && secondCard.name === '27.jpg') {
+      if (firstCard.name === '27.jpg') {
         playSound27();
       }
-      if (firstCard.name === '28.jpg' && secondCard.name === '28.jpg') {
+      if (firstCard.name === '28.jpg') {
         playSound28();
+      }
+      
+  }, [firstCard]);
+
+  useEffect(() => {
+    if (secondCard.name === '1.jpg') {
+        playSound1();
+      }
+      if (secondCard.name === '2.jpg') {
+        playSound2();
+      }
+      if (secondCard.name === '3.jpg') {
+        playSound3();
+      }
+      if (secondCard.name === '4.jpg') {
+        playSound4();
+      }
+      if (secondCard.name === '5.jpg') {
+        playSound5();
+      }
+      if (secondCard.name === '6.jpg') {
+        playSound6();
+      }
+      if (secondCard.name === '7.jpg') {
+        playSound7();
+      }
+      if (secondCard.name === '8.jpg') {
+        playSound8();
+      }
+      if (secondCard.name === '9.jpg') {
+        playSound9();
+      }
+      if (secondCard.name === '10.jpg') {
+        playSound10();
+      }
+      if (secondCard.name === '11.jpg') {
+        playSound11();
+      }
+      if (secondCard.name === '12.jpg') {
+        playSound12();
+      }
+      if (secondCard.name === '13.jpg') {
+        playSound13();
+      }
+      if (secondCard.name === '14.jpg') {
+        playSound14();
+      }
+      if (secondCard.name === '15.jpg') {
+        playSound15();
+      }
+      if (secondCard.name === '16.jpg') {
+        playSound16();
+      }
+      if (secondCard.name === '17.jpg') {
+        playSound17();
+      }
+      if (secondCard.name === '18.jpg') {
+        playSound18();
+      }
+      if (secondCard.name === '19.jpg') {
+        playSound19();
+      }
+      if (secondCard.name === '20.jpg') {
+        playSound20();
+      }
+      if (secondCard.name === '21.jpg') {
+        playSound21();
+      }
+      if (secondCard.name === '22.jpg') {
+        playSound22();
+      }
+      if (secondCard.name === '23.jpg') {
+        playSound23();
+      }
+      if (secondCard.name === '24.jpg') {
+        playSound24();
+      }
+      if (secondCard.name === '25.jpg') {
+        playSound25();
+      }
+      if (secondCard.name === '26.jpg') {
+        playSound26();
+      }
+      if (secondCard.name === '27.jpg') {
+        playSound27();
+      }
+      if (secondCard.name === '28.jpg') {
+        playSound28();
+      }
+      
+  }, [secondCard]);
+
+  useEffect(() => {
+    if (firstCard.name === '1.jpg' && secondCard.name === '1.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '2.jpg' && secondCard.name === '2.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '3.jpg' && secondCard.name === '3.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '4.jpg' && secondCard.name === '4.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '5.jpg' && secondCard.name === '5.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '6.jpg' && secondCard.name === '6.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '7.jpg' && secondCard.name === '7.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '8.jpg' && secondCard.name === '8.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '9.jpg' && secondCard.name === '9.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '10.jpg' && secondCard.name === '10.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '11.jpg' && secondCard.name === '11.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '12.jpg' && secondCard.name === '12.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '13.jpg' && secondCard.name === '13.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '14.jpg' && secondCard.name === '14.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '15.jpg' && secondCard.name === '15.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '16.jpg' && secondCard.name === '16.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '17.jpg' && secondCard.name === '17.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '18.jpg' && secondCard.name === '18.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '19.jpg' && secondCard.name === '19.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '20.jpg' && secondCard.name === '20.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '21.jpg' && secondCard.name === '21.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '22.jpg' && secondCard.name === '22.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '23.jpg' && secondCard.name === '23.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '24.jpg' && secondCard.name === '24.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '25.jpg' && secondCard.name === '25.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '26.jpg' && secondCard.name === '26.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '27.jpg' && secondCard.name === '27.jpg') {
+        playSound();
+      }
+      if (firstCard.name === '28.jpg' && secondCard.name === '28.jpg') {
+        playSound();
       }
       
   }, [firstCard, secondCard, sound, playSound]);
