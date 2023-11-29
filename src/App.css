@@ -1,6 +1,5 @@
 .app {  
-  background-color: rgb(107, 157, 199);
-  display: block;
+  background-color: rgb(31, 6, 143);
 }
 
 .card {
@@ -25,42 +24,11 @@
   width: calc(100px - 10px);
 }
 
-.titulo {
-  position: absolute;
-  font-size: 200%;
-  font-weight: 800;
-  font-style: italic;
-  color: red;
-  background-color: rgb(107, 157, 199);
-  border-radius: 80%;
-  margin-left: 15%;
-}
-
-@media only screen and (max-width: 480px) {
-  
-  .card-image{
-    height: calc(50x - 5px);
-    width: calc(50px - 5px);
-  }
-  .titulo {
-    position: absolute;
-    font-size: 20px;
-    font-style: italic;
-    color: red;
-    background-color: rgb(107, 157, 199);
-    border-radius: 80%;
-  }
-  
-}
-
 .fondo {
   /* width: 90%;
   margin-left: 5%; */
-  width: 100%;
+  width: 70%;
   height: 368px;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   z-index: 1;
 }
@@ -70,6 +38,30 @@
   height: 193px;
 }
 
+.fondofooter{
+  width: 70%;
+  height: 193px;
+  display: inline-block;
+  background-color: rgb(31, 6, 143);
+}
+
+@media only screen and (max-width: 480px) {
+  
+  .fondofooter{
+    width: 40%;
+  }
+  .card-image{
+    height: calc(50x - 5px);
+    width: calc(50px - 5px);
+  }
+  
+}
+
+.cuerpo {
+  justify-content: center;
+  display: flex;
+}
+
 .reloj {
     width: 25%;
     height: 15%;
@@ -77,20 +69,26 @@
 }
 
 .reloj-reset{
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
+  margin-top: 2%;
+  margin-left: 2%;
+  display: inline-block;
+}
+
+h5{
+  color:white;
+  margin-top: 5px;
+  display: inline-block;
 }
 
 .relojcentro {
-
-    display: flex;
+    width: 120px;
+    margin-bottom: 20px;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     font-size: 25px;
     font-weight: bold;
-    border-radius: 10px;
+    background-color: white;
+    display: inline-block;
 }
 
 .relojcentr {

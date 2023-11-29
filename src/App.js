@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Card from './components/Card';
 import './App.css';
 import Button from 'react-bootstrap/Button';
-import imagen from './images/fondo.png'
-import josevasquez from './images/Jose Vasquez Gorbernador.jpg'
+import imagen from './images/fondoRojo.png'
+import josevasquez from './images/Jose Vasquez Gorbernador.png'
+import josevasquez2 from './images/Jose Vasquez Gorbernador2.png'
 import ConfettiComponent from './components/Confetti'
 import { images } from './import';
 import useSound from 'use-sound';
@@ -285,14 +286,9 @@ function App() {
   return (
     <div className='app'>
        {paginaCargada ? ( 
-      <div className={''}>
-        <div className='titulo'>
-          MEMOVIAL SECRETARIA DE TRANSPORTE DE GUÁRICO
-        </div>
-        <div>
+        <div>  
           <img className='fondocabecera' src={josevasquez}/> 
-        </div>
-        <div>
+        <div className='cuerpo'>
         { disabledCards.length === cards.length && <ConfettiComponent/> }
         { disabledCards.length === cards.length && <img className='fondo' src={imagen}/> }
         <div className='baulcard'>
@@ -316,25 +312,27 @@ function App() {
 
         </div>
         </div>
-        <div className='reloj-reset'>
-      <div className='relojcentro'>{`${Math.floor(segundos / 3600)
-      .toString()
-      .padStart(2, '0')}:${Math.floor((segundos % 3600) / 60)
-      .toString()
-      .padStart(2, '0')}:${(segundos % 60).toString().padStart(2, '0')}`}</div>
+          <div className='reloj-reset'>
+              <h5>TIEMPO</h5><div className='relojcentro'>{`${Math.floor(segundos / 3600)
+              .toString()
+              .padStart(2, '0')}:${Math.floor((segundos % 3600) / 60)
+              .toString()
+              .padStart(2, '0')}:${(segundos % 60).toString().padStart(2, '0')}`}</div>
 
-      <div className='btn'>
-         <Button className='btn btn-primary' onClick={reset}>
-           Nuevo Juego
-         </Button>
-      </div>
-      </div>
-      </div>
-      ) : ( 
-        // Mostrar un mensaje de carga mientras la página se está cargando
-          <p>Cargando...</p>
-      )} 
-    </div>
+              <div className=''>
+                <Button className='btn btn-primary' onClick={reset}>
+                  Nuevo Juego
+                </Button>
+              </div>
+          </div>
+          <img className='fondofooter' src={josevasquez2}/> 
+          </div>
+          ) : ( 
+            // Mostrar un mensaje de carga mientras la página se está cargando
+              <p>Cargando...</p>
+          )} 
+        </div>
+    
   );
 }
 
