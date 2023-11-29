@@ -80,6 +80,9 @@ function App() {
   const [playSound27] = useSound(sound27, {volume: 3});
   const [playSound28] = useSound(sound28, {volume: 3});
 
+  const columns = 14;
+  const rows = 4;
+
   useEffect(() => {
     // Simula el tiempo de carga, por ejemplo, 2 segundos
     const tiempoDeCargaSimulado = 500;
@@ -282,6 +285,13 @@ function App() {
     setFirstCard({});
     setSecondCard({});
   }
+  
+    // Divide las cartas en filas
+    const rowsOfCards = Array.from({ length: rows }, (_, rowIndex) => {
+      const start = rowIndex * columns;
+      const end = start + columns;
+      return cards.slice(start, end);
+    });
 
   return (
     <div className='app'>
@@ -294,9 +304,12 @@ function App() {
       e.target.classList.add('fondo-visible');
     }}/> }
         <div className='baulcard'>
-         {
-          cards.map((card, index) => {
+        {rowsOfCards.map((row, rowIndex) => (
+        <div key={rowIndex} className="card-row">
+          {row.map((card, colIndex) => {
+            const index = rowIndex * columns + colIndex;
             const isHidden = disabledCards.includes(index);
+
             return (
               <Card
                 key={index}
@@ -309,8 +322,9 @@ function App() {
                 isHidden={isHidden}
               />
             );
-          })
-        }
+          })}
+        </div>
+      ))}
         </div>
         </div>
           <div className='reloj-reset'>

@@ -11,7 +11,7 @@
 
 .baulcard {
   text-align: center;
-  min-height: 368px;
+  min-height: 300px;
   
 }
 
@@ -20,16 +20,16 @@
 }
 
 .card-image {
-  height: calc(100px - 10px);
-  width: calc(100px - 10px);
+  height: calc(80px - 8px);
+  width: calc(80px - 8px);
 }
 
 .fondo {
   /* width: 90%;
   margin-left: 5%; */
   opacity: 0;
-  width: 50%;
-  height: 368px;
+  width: 40%;
+  height: 300px;
   position: absolute;
   z-index: 1;
   transition: opacity 5s ease-in-out;
@@ -58,8 +58,8 @@
     width: 40%;
   }
   .card-image{
-    height: calc(50x - 5px);
-    width: calc(50px - 5px);
+    height: calc(60x - 6px);
+    width: calc(60px - 6px);
   }
   
 }
