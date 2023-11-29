@@ -290,7 +290,9 @@ function App() {
           <img className='fondocabecera' src={josevasquez}/> 
         <div className='cuerpo'>
         { disabledCards.length === cards.length && <ConfettiComponent/> }
-        { disabledCards.length === cards.length && <img className='fondo' src={imagen}/> }
+        { disabledCards.length === cards.length && <img className='fondo' src={imagen} onLoad={(e) => {
+      e.target.classList.add('fondo-visible');
+    }}/> }
         <div className='baulcard'>
          {
           cards.map((card, index) => {
@@ -309,7 +311,6 @@ function App() {
             );
           })
         }
-
         </div>
         </div>
           <div className='reloj-reset'>

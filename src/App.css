@@ -27,10 +27,17 @@
 .fondo {
   /* width: 90%;
   margin-left: 5%; */
+  opacity: 0;
   width: 70%;
   height: 368px;
   position: absolute;
   z-index: 1;
+  transition: opacity 5s ease-in-out;
+  
+}
+
+.fondo-visible {
+  opacity: 1; /* Cuando la clase 'fondo-visible' se aplica, la opacidad será 1, mostrando la imagen */
 }
 
 .fondocabecera {
