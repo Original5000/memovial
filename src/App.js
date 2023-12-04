@@ -80,7 +80,6 @@ function App() {
   const [playSound27] = useSound(sound27, {volume: 3});
   const [playSound28] = useSound(sound28, {volume: 3});
 
-  
   const columns = 14;
   const rows = 4;
 
