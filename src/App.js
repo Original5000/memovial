@@ -3,7 +3,7 @@ import Card from './components/Card';
 import './App.css';
 import Button from 'react-bootstrap/Button';
 import imagen from './images/fondoRojo.png'
-import josevasquez from './images/Jose Vasquez Gorbernador.png'
+import josevasquez from './images/Jose Vasquez Gorbernador.jpg'
 import josevasquez2 from './images/Jose Vasquez Gorbernador2.png'
 import ConfettiComponent from './components/Confetti'
 import { images } from './import';

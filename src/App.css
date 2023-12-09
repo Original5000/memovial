@@ -58,8 +58,8 @@
     width: 40%;
   }
   .card-image{
-    height: calc(60x - 6px);
-    width: calc(60px - 6px);
+    height: calc(58x - 6px);
+    width: calc(58px - 6px);
   }
   
 }
